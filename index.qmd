@@ -1,0 +1,66 @@
+---
+title: "analisis examenes"
+author: "Gabriel Monge Vidal"
+format: html
+toc: true
+lang: es
+
+---
+
+## Introduccion
+
+Este documento contiene un analisis de datos de rendimiento de estudiantes en examenes.
+
+# Fuente de los datos:
+[Kaggle - Students Performance in Exams] ("https://raw.githubusercontent.com/gf0604-procesamientodatosgeograficos/2025-i/refs/heads/main/datos/kaggle/StudentsPerformance.csv")
+
+## Carga de datos
+```{r}
+#| label: carga-datos
+
+datos <- read.csv("StudentsPerformance.csv")
+
+```
+
+
+```{r}
+#| label: muestra-datos
+
+head(datos[,c("gender", "race.ethnicity", "math.score", "reading.score", "writing.score")])
+
+```
+
+## Analisis
+
+### Relacion entre rendimiento en lectura y escritura
+
+```{r}
+#| label: relacion-lectura-escritura
+#| code-fold: true
+
+plot(
+  x = datos$reading.score,
+  y = datos$writing.score,
+  xlab = "Rendimiento en lectura",
+  ylab = "Rendimiento en escritura",
+  pch = 19, col = "slateblue"
+)
+```
+
+
+
+### Relacion entre rendimiento en lectura y matematica
+
+```{r}
+#| label: relacion-lectura-matematica
+#| code-fold: true
+
+plot(
+  x = datos$reading.score,
+  y = datos$math.score,
+  xlab = "Rendimiento en lectura",
+  ylab = "Rendimiento en matematica",
+  pch = 19, col = "darkred"
+)
+```
+
