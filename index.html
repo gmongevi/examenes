@@ -88,6 +88,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#relacion-entre-rendimiento-en-lectura-y-escritura" id="toc-relacion-entre-rendimiento-en-lectura-y-escritura" class="nav-link" data-scroll-target="#relacion-entre-rendimiento-en-lectura-y-escritura">Relacion entre rendimiento en lectura y escritura</a></li>
   <li><a href="#relacion-entre-rendimiento-en-lectura-y-matematica" id="toc-relacion-entre-rendimiento-en-lectura-y-matematica" class="nav-link" data-scroll-target="#relacion-entre-rendimiento-en-lectura-y-matematica">Relacion entre rendimiento en lectura y matematica</a></li>
+  <li><a href="#relacion-entre-rendimiento-en-escritura-y-matematica" id="toc-relacion-entre-rendimiento-en-escritura-y-matematica" class="nav-link" data-scroll-target="#relacion-entre-rendimiento-en-escritura-y-matematica">Relacion entre rendimiento en escritura y matematica</a></li>
   </ul></li>
   </ul></li>
   </ul>
@@ -168,6 +169,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<p>El grafico muestra que los rendimientos aumentan proporcionalmente.</p>
 </section>
 <section id="relacion-entre-rendimiento-en-lectura-y-matematica" class="level3">
 <h3 class="anchored" data-anchor-id="relacion-entre-rendimiento-en-lectura-y-matematica">Relacion entre rendimiento en lectura y matematica</h3>
@@ -190,6 +192,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+</section>
+<section id="relacion-entre-rendimiento-en-escritura-y-matematica" class="level3">
+<h3 class="anchored" data-anchor-id="relacion-entre-rendimiento-en-escritura-y-matematica">Relacion entre rendimiento en escritura y matematica</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Código</summary>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">x =</span> datos<span class="sc">$</span>writing.score,</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">y =</span> datos<span class="sc">$</span>math.score,</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="st">"Rendimiento en lectura"</span>,</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">ylab =</span> <span class="st">"Rendimiento en matematica"</span>,</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">pch =</span> <span class="dv">19</span>, <span class="at">col =</span> <span class="st">"red"</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/relacion-escritura-matematica-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>El rendimiento aumenta proporcionalmente</p>
 </section>
 </section>
 </section>

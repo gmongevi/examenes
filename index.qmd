@@ -47,7 +47,7 @@ plot(
 )
 ```
 
-
+El grafico muestra que los rendimientos aumentan proporcionalmente.
 
 ### Relacion entre rendimiento en lectura y matematica
 
@@ -63,4 +63,19 @@ plot(
   pch = 19, col = "darkred"
 )
 ```
+### Relacion entre rendimiento en escritura y matematica
 
+```{r}
+#| label: relacion-escritura-matematica
+#| code-fold: true
+
+plot(
+  x = datos$writing.score,
+  y = datos$math.score,
+  xlab = "Rendimiento en lectura",
+  ylab = "Rendimiento en matematica",
+  pch = 19, col = "red"
+)
+```
+
+El rendimiento aumenta proporcionalmente
